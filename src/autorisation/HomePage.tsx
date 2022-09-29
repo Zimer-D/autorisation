@@ -1,7 +1,11 @@
+import ContactList from "contact-list";
 import { useAppDispatch } from "hooks/reduxHooks";
 import { useAuth } from "hooks/useAuth";
+import { Button } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 import { removeUser } from "store/slice/userSlice";
+import './HomePage.sass'
+
 
 const HomePage = () => {
     const dispatch = useAppDispatch();
@@ -10,12 +14,16 @@ const HomePage = () => {
         <>
             {isAuth ?
                 <>
-                    <div>Main page</div>
-                    <button
+                    <header className="header">
+                        Contact list
+                    <Button
+                     variant="outline-dark"
                         onClick={() => dispatch(removeUser())}
                     >
                         Log out
-                    </button>
+                    </Button>
+                    </header>
+                    <ContactList />
                 </>
                 :
                 <Navigate replace to="/login" />

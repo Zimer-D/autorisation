@@ -2,7 +2,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import { useAppDispatch } from "hooks/reduxHooks";
 import { useNavigate } from "react-router-dom";
 import { setUser } from "store/slice/userSlice";
-import Form from "./Form";
+import LoginForm from "./Form";
 
 
 const SignUp = () => {
@@ -26,8 +26,9 @@ const SignUp = () => {
 
     return (
         <>
-            <Form
-                title='Register!'
+            <LoginForm
+                title = 'Sign in'
+                buttonText='Register!'
                 handleClick={handleRegister}
             />
         </>

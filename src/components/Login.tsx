@@ -1,7 +1,7 @@
 import {useNavigate} from 'react-router-dom'
 import { setUser } from "store/slice/userSlice";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import Form from "./Form";
+import LoginForm from "./Form";
 import { useAppDispatch } from "hooks/reduxHooks";
 
 
@@ -25,8 +25,9 @@ const Login = () => {
      
     return (
         <>
-        <Form 
-        title = "Sign in!"
+        <LoginForm
+        title = "Login" 
+        buttonText = "Sign in!"
         handleClick={handleLogin}
         />
         </>
