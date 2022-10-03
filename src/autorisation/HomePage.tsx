@@ -1,9 +1,9 @@
-import ContactList from "contact-list";
-import { useAppDispatch } from "hooks/reduxHooks";
-import { useAuth } from "hooks/useAuth";
+import ContactList from "./../contact-list";
+import { useAppDispatch } from "./../hooks/reduxHooks";
+import { useAuth } from "./../hooks/useAuth";
 import { Button } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
-import { removeUser } from "store/slice/userSlice";
+import { removeUser } from "./../store/slice/userSlice";
 import './HomePage.sass'
 
 

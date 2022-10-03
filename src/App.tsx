@@ -1,6 +1,6 @@
-import HomePage from 'autorisation/HomePage';
-import LoginPage from 'autorisation/LoginPage';
-import RegisterPage from 'autorisation/RegisterPage';
+import HomePage from './autorisation/HomePage';
+import LoginPage from './autorisation/LoginPage';
+import RegisterPage from './autorisation/RegisterPage';
 import { Route, Routes } from 'react-router-dom'
 import './App.sass';
 

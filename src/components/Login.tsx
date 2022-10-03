@@ -1,8 +1,8 @@
 import {useNavigate} from 'react-router-dom'
-import { setUser } from "store/slice/userSlice";
+import { setUser } from "./../store/slice/userSlice";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import LoginForm from "./Form";
-import { useAppDispatch } from "hooks/reduxHooks";
+import { useAppDispatch } from "./../hooks/reduxHooks";
 
 
 

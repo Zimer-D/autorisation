@@ -1,5 +1,5 @@
 import axios from "axios";
-import EditContact, { ContactFormValues } from "edit-contact";
+import EditContact, { ContactFormValues } from "./../edit-contact";
 import { Fragment, SetStateAction, useEffect, useMemo, useState } from "react";
 import { Button, Form, Pagination } from "react-bootstrap";
 import ContactItem from "./contactItem";

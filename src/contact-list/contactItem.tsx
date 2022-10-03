@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './contact-list.sass'
 import { ButtonGroup } from "react-bootstrap";
-import { ContactFormValues } from "edit-contact";
+import { ContactFormValues } from "./../edit-contact";
 
 interface ContactItemProps {
     item: Contacts;
@@ -17,7 +17,7 @@ interface ContactItemProps {
 const ContactItem: FC<ContactItemProps> = ({ item, onEdit, deleteContact }) => {
     return (
         <Card className="col-md-10 mx-auto" >
-            <Card.Body style={{display:'flex', justifyContent: 'space-between'}}>
+            <Card.Body style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr'}}>
                     <div>{item.name}</div>
                     <div>{item.phone}</div>
                     <div>{item.email}</div>
