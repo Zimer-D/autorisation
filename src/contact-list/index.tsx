@@ -72,7 +72,6 @@ const ContactList = () => {
         setShowModal(true)
     }
     const newContact = (res: ContactFormValues) => {
-        console.log(11, res)
         !item?
         setItems([res, ...items]) 
         :
